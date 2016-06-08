@@ -10,16 +10,20 @@ This tool use NodeJS, Parker and Grunt to get your css information and generate 
 You need have NodeJS installed before start.
 
 Edit Gruntfile.js to get your css file:  
-```generate_stats: {
+```
+generate_stats: {
     cmd: 'parker path/to/css/folder/ --format=json > results/data/StyleDefault-latest.json',
     stdout: false
-},```
+},
+```
 
 To generate to history, edit:    
-```generate_stats_to_history: {
+```
+generate_stats_to_history: {
 	cmd: 'parker path/to/css/folder/ --format=json > results/data/history/StyleDefault-<%= timestamp %>-.json',
 	stdout: false
-}```
+}
+```
 
 Pointing to folder, Kerberos will get all files in this folder. You can point to file directly.
 
