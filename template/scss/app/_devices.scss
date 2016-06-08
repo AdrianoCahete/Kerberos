@@ -1,0 +1,58 @@
+// XS -- Extra small screen / phone
+@media (min-width:0em) {
+	.sidebar {
+		min-height:50px;
+	}
+	
+	.navbar-mobile {
+		display:block;
+	}
+	
+	.content {
+
+	}
+}
+
+// SM -- Small screen / phone
+@media (min-width:34em) {
+	.sidebar {
+		min-height:50px;
+	}	
+	
+	.content {
+
+	}
+}
+
+// MD -- Medium screen / tablet
+@media(min-width:48em){
+	.sidebar {
+		min-height:100vh;
+	}	
+	
+	.content {
+
+	}
+}
+
+// LG -- Large screen / desktop
+@media(min-width:62em){
+	.sidebar {
+		min-height:100vh;
+	}	
+	
+	.content {
+
+	}
+}
+
+// XL -- Extra large screen / wide desktop
+@media(min-width:75em){
+	.sidebar {
+		min-height:100vh;
+	}	
+	
+	.content {
+
+	}
+}

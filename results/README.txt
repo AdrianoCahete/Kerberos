@@ -1,0 +1,1 @@
+All files inside this folder are removed each script run!

@@ -1,0 +1,63 @@
+// Framework Utils
+@import "../global/mixins";
+
+// Import projects specific variables
+@import "variables/variables";
+
+
+// Project Style [Portfolio]
+.container-fluid {
+	padding-left:0;
+	padding-right:0;
+}
+
+.navbar-mobile {
+	display:none;
+	
+	.btn {
+		&.btn-nav-mobile {
+			width:100%;
+			background-color:$mobileMenuBGColor;
+		}
+	}
+	
+	.nav-mobile {
+		background-color:$mobileMenuBGColor;
+		
+		.nav-link {
+			width:100%;
+			
+			&:hover {
+				background:red;
+			}
+		}
+	}
+}
+
+.sidebar {
+	background:#ccc;
+	min-height:100vh;
+	
+	position:fixed;
+	
+	padding:10px;
+	
+	.nav {
+		.nav-link {
+				width:100%;
+
+				&:hover {
+					background:white;
+				}
+		}
+	}
+}
+
+.content {
+	background:#e1e1e1;
+	min-height:100vh;
+	
+	padding:10px;
+}
+
+// Mobile

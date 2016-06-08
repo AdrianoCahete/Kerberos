@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	// This function get background color and choose best color to shows text
+	// Created by Adriano Caheté < https://www.profolio.com.br >
+	$(document).ready(function () {
+		function isDark(color) {
+			var match = /rgb\((\d+).*?(\d+).*?(\d+)\)/.exec(color);
+			var r = parseInt(match[1]);
+			var g = parseInt(match[2]);
+			var b = parseInt(match[3]);
+			var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+			return (yiq <= 128);
+		}
+
+		var divs = $(".color-item");
+		$(divs).each(function () {
+			$(this).css("color", isDark($(this).css("background-color")) ? 'white' : 'black');
+		});
+	});
+</script>

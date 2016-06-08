@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<!--(bake inc/header.html)-->
+
+	<body>
+        <!--(bake inc/scripts/isDark.html)-->
+        
+        <!--(bake inc/navbar.html)-->
+	    <div class="container-fluid">
+            <!--(bake inc/sidebar.html)-->
+	        
+	        <div class="col-xs-11 col-xs-offset-1 col-sm-11 col-sm-offset-1 col-md-10 col-md-offset-2 content">
+	            
+	            
+	            <div class="row">
+                   <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Total Stylesheets</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{total-stylesheets}}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Stylesheet Size</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{total-stylesheet-size}}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Rules</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{total-rules}}</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Selectors</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{total-selectors}}</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Identifiers</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{total-identifiers}}</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Declarations</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{total-declarations}}</span>
+                            </div>
+                        </div>
+                        
+					   <!--(bake-start _if="total-id-selectors")-->
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Selectors using ID</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{total-id-selectors}}</span>
+                            </div>
+                        </div>
+					   <!--(bake-end)-->
+                        
+                        <!--
+						<div class="card">
+                            <div class="card-title">
+                                <h3>Seletores por Regra</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{selectors-per-rule}}</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Identificadores por Seletores</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{identifiers-per-selector}}</span>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">
+                                <h3>Especificidade por Seletor</h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{specificity-per-selector}}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <h3></h3>
+                            </div>
+                            <div class="card-content">
+                                <span>{{top-selector-specificity}}</span>
+                            </div>
+                        </div>
+						-->
+                        
+                        <div class="card">
+                            <div class="card-title">
+                                <h3></h3>
+                            </div>
+                            <div class="card-content">
+                                <span class="text">{{top-selector-specificity-selector}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                   <div class="col-md-12">
+                        <div class="card card-color">
+                            <div class="card-title">
+                                <h3>Colors ({{total-unique-colours}})</h3>
+                            </div>
+                            <div class="card-content">
+                                <!--(bake-start _foreach="colour:unique-colours")-->
+                                    <div class="color-item" style="background-color: {{colour}};">{{colour}}</div>
+                                <!--(bake-end)-->
+                            </div>
+                        </div>
+                     </div>
+                </div>
+	        </div>
+	    </div>		
+	</body>
+</html>

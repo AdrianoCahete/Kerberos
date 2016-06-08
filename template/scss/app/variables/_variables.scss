@@ -1,0 +1,21 @@
+// Framework variables/utils
+@import "../../global/variables/variables";
+
+// Copyright Vars
+$actualYear:"2016";
+
+// Project's variables
+$mobileMenuBGColor: 			#ccc;
+$body-bg:                       #F5F5F5;
+
+
+// Dashboard
+$sidebar-bg:                    #3d3d3d;
+$sidebar-link-color:            #d9d9d9;
+$sidebar-link-hover-bg:         lighten($sidebar-bg, 5%);
+$sidebar-link-hover-color:      $sidebar-link-color;
+$sidebar-link-active-bg:        #2C2C2C;
+$sidebar-link-active-color:     #fff;
+$sidebar-collapse-width:        34rem;
+
+$content-bg:                    $body-bg;

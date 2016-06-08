@@ -1,0 +1,43 @@
+
+/*!
+ *
+ *             Profolio CSS Framework
+ *      		   {#actualYear}
+ *
+ */
+
+// Framework Options
+// --------------------
+
+// Bootstrap with Flexbox enabled -- default(false)
+$enable-flex: false;
+
+// Enable Rounded borders -- default(true)
+$enable-rounded: false;
+
+// Enable Shadows -- default(false)
+$enable-shadows:false;
+
+// Enable Gradients -- default(false)
+$enable-gradients:false;
+
+// Enable Transitions -- default(true)
+$enable-transitions:true;
+
+// Disable hovering emulation in mobiles -- default(false)
+$use-hover-media-query: true;
+
+
+
+// Framework Base
+@import "framework";
+
+
+// App/Project Style
+// -----------------
+
+// Dashboard
+@import "app/dashboard";
+	
+// Devices and Media Queries
+@import "app/devices";

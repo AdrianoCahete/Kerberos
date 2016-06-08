@@ -1,0 +1,51 @@
+// Comente o que você não usará no projeto
+
+// Core variables and mixins
+@import "global/variables/variables";
+@import "global/mixins";
+
+// Reset and dependencies
+@import "global/normalize";
+@import "global/print";
+
+// Core CSS
+@import "global/reboot";
+@import "modules/type";
+@import "modules/images";
+@import "modules/code";
+@import "global/grid";
+@import "modules/tables";
+@import "modules/forms";
+@import "modules/buttons";
+
+// Modules
+@import "modules/animation";
+@import "modules/dropdown";
+@import "modules/button-group";
+//@import "modules/input-group";
+//@import "modules/custom-forms";
+@import "modules/nav";
+@import "modules/navbar";
+//@import "modules/card";
+@import "modules/breadcrumb";
+@import "modules/pagination";
+//@import "modules/pager";
+@import "modules/labels";
+//@import "modules/jumbotron";
+@import "modules/alert";
+@import "modules/progress";
+//@import "modules/media";
+@import "modules/list-group";
+@import "global/responsive-embed";
+@import "modules/close";
+
+// Components w/ JavaScript
+//@import "modules/modal";
+@import "modules/tooltip";
+//@import "modules/popover";
+//@import "modules/carousel";
+
+// Utility classes
+@import "global/utilities";
+@import "global/utilities-spacing";
+@import "global/utilities-responsive";

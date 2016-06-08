@@ -1,0 +1,21 @@
+{
+  "name": "kerberos",
+  "version": "1.0.0",
+  "homepage": "https://www.profolio.com.br/",
+  "author": "Adriano Cahete",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+"scripts": {
+  "preinstall": "npm i -g parker@0.0.10 grunt-cli"
+},
+  "devDependencies": {
+    "grunt": ">=0.4.5 <1.0.0",
+    "grunt-bake": "^1.7.2",
+    "grunt-exec": "^0.4.6",
+    "grunt-sass": "^1.1.0",
+    "load-grunt-tasks": "^3.3.0",
+    "parker": "0.0.10",
+    "time-grunt": "^1.2.2"
+  }
+}
